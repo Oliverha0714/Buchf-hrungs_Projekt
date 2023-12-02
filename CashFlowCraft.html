@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashFlowCraft</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        t{
+            font-size: 28px;
+            font-style: italic;
+            font-weight: bold;
+            background-color: #2ae468da;
+            text-align: center;
+            padding: px;
+        }
+    </style>
+        <style>
+        /* Stil für das Pop-up-Fenster */
+       #popup {
+            font-size: 15px;
+            font-style: none;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: DarkSalmon;
+            border: 0px solid #ccc;
+            line-height: 2;
+            z-index: 1000;
+        }
+    </style>
+    <style>
+        header {
+            text-align: center;
+            padding: 3px;
+            background-color: DarkSalmon;
+            color: white; 
+        }
+    </style>
+    <style>
+        footer {
+            text-align: center;
+            padding: px;
+            background-color: DarkSalmon;
+            color: white;
+        }
+    </style>
+    <style>
+        article{
+            font-size: 20px;
+        }
+    </style>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="CashFlowCraft_Logo.png" alt="kurzer Text" height="200" width="200">
+        <t><h1>CashFlowCraft</h></t>
+    </header>
+    <!-- Buttons -->`
+<div class="button-container">
+        <br><button onclick="openPopup('login')">Einloggen</button>
+
+        <button onclick="openPopup('register')">Registrieren</button>
+</div>
+    <div class="article-container">
+        <article>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br>
+
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.<br>
+
+            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </article>
+    </div>
+<!-- Pop-up-Fenster -->
+<div id="popup">
+
+    <span onclick="closePopup()" style="cursor: pointer; float: right;">X</span>
+        <div id="loginForm" style="display: none;">
+            <h2>Einloggen</h2>
+            <form method="post" action="">
+                Benutzername oder E-mail: <input type="text" name="username_or_e-mail" required><br>
+                Passwort: <input type="password" name="password" required><br>
+                <input type="submit" name="login" value="Login">
+            </form>
+        </div>
+    <div id="registerForm" style="display: none;">
+        <h2>Registrierung</h2>
+        <form method="post" action="">
+            Benutzername:   <input type="text" name="username" required><br>
+            E-Mail:         <input type="text" name="E-Mail" required><br>
+            Vorname:        <input type="text" name="firstname" required><br>
+            Nachname:       <input type="text" name="lastname" required><br>
+            Passwort:       <input type="password" name="password" required><br>
+            <input type="submit" name="register" value="Registrieren">
+        </form>
+    </div>
+</div>
+
+<script>
+    // JavaScript-Funktionen für das Pop-up-Fenster
+    function openPopup(formType) {
+        document.getElementById('popup').style.display = 'block';
+        if (formType === 'login') {
+            document.getElementById('loginForm').style.display = 'block';
+            document.getElementById('registerForm').style.display = 'none';
+        } else if (formType === 'register') {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('registerForm').style.display = 'block';
+        }
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+    <footer>
+        <p>Impressum</p>
+        <p>Kontakt: <a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer> 
+
+</body>
+</html>
+
+
